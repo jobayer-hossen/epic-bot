@@ -1,22 +1,24 @@
-const { EmbedBuilder } = require('discord.js');
-const Logger = require('../logger');
+const { EmbedBuilder } = require("discord.js");
+const Logger = require("../logger");
 
-const logger = new Logger('PokeCommand');
+const logger = new Logger("PokeCommand");
 
 module.exports = {
-  name: 'poke',
-  description: 'Poke someone!',
+  name: "poke",
+  description: "Poke someone!",
 
   async execute(message, args, client) {
     try {
       const user = message.mentions.users.first();
 
       if (!user) {
-        return await message.reply('❌ Please mention someone! Usage: `eb poke @user`');
+        return await message.reply(
+          "❌ Please mention someone! Usage: `eb poke @user`",
+        );
       }
 
       if (user.id === message.author.id) {
-        return await message.reply('👉 You poked yourself! That\'s annoying!');
+        return await message.reply("👉 You poked yourself! That's annoying!");
       }
 
       const pokeMessages = [
@@ -32,42 +34,37 @@ module.exports = {
 
       // UNIQUE POKE GIFS ONLY
       const pokeGifs = [
-        'https://media.giphy.com/media/Cm4MwSnKqkOKQ/giphy.gif', // Poke anime
-        'https://media.giphy.com/media/l0HlNaQ9hHmGtc4Za/giphy.gif', // Annoyed anime
-        'https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif', // Angry reaction
-        'https://media.giphy.com/media/3o85xIO33l7RlmLR4I/giphy.gif', // Annoyed poke
-        'https://media.giphy.com/media/xTiTnIHzP38T0Dz0I8/giphy.gif', // Funny poke anime
-        'https://media.giphy.com/media/l0HlR6R1w04l8MCZwM/giphy.gif', // Mad anime
-        'https://media.giphy.com/media/3o7TKU8RnDLjXHGwlG/giphy.gif', // Irritated anime
-        'https://media.giphy.com/media/l3q2K5jinAlChoCLS/giphy.gif', // Angry poke
-        'https://media.giphy.com/media/l0HlTy9x8FZo0XO1i/giphy.gif', // Fed up anime
-        'https://media.giphy.com/media/26uf1EUQrGnwHh3Eg/giphy.gif', // Action poke
-        'https://media.giphy.com/media/l0HlQd7R8wpf7HTQc/giphy.gif', // Annoyed poke moment
-        'https://media.giphy.com/media/xT9IgEx8SbQ0teblJi/giphy.gif', // Poke reaction
+        "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXFsOXd5a2Z5dXhxdnkwZHgzOWZvNHM0ODFxYnJpMzV4dmV1cXVjZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/PkR8gPgc2mDlrMSgtu/giphy.gif",
+        "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXFsOXd5a2Z5dXhxdnkwZHgzOWZvNHM0ODFxYnJpMzV4dmV1cXVjZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/RMl2RIcGjdv4GSH1G8/giphy.gif",
+        "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXFsOXd5a2Z5dXhxdnkwZHgzOWZvNHM0ODFxYnJpMzV4dmV1cXVjZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/dY09qTUsPzks5zCtND/giphy.gif",
+        "https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3eDB1MjJ1a29kZW9zMzBkcXc2ZXF0N3psM252ZmN0aDR6ZjNwMGZyMSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/FXl1pSZh49lPW/giphy.gif",
+        "https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3M2NmbnFpanlxMmI3b3JkajM1Nm9jcXd6cTFrOW90dDNpZGU0MThvaiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/LXTQN2kRbaqAw/giphy.gif",
+        "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXFsOXd5a2Z5dXhxdnkwZHgzOWZvNHM0ODFxYnJpMzV4dmV1cXVjZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/CK0Eg2ymtfzTO2yVJD/giphy.gif",
       ];
 
-      const randomMessage = pokeMessages[Math.floor(Math.random() * pokeMessages.length)];
+      const randomMessage =
+        pokeMessages[Math.floor(Math.random() * pokeMessages.length)];
       const randomGif = pokeGifs[Math.floor(Math.random() * pokeGifs.length)];
 
       const embed = new EmbedBuilder()
-        .setColor('#FFD700')
-        .setTitle('👉 Poke!')
+        .setColor("#FFD700")
+        .setTitle("👉 Poke!")
         .setDescription(randomMessage)
         .setImage(randomGif)
         .setTimestamp()
         .setFooter({
-          text: 'Stop poking me! 😒',
+          text: "Stop poking me! 😒",
           iconURL: client.user.avatarURL(),
         });
 
       await message.reply({ embeds: [embed] });
-      await message.react('👉');
-      await message.react('💢');
+      await message.react("👉");
+      await message.react("💢");
 
       logger.info(`${message.author.tag} poked ${user.tag}`);
     } catch (error) {
-      logger.error('Error in poke command:', error.message);
-      await message.reply('❌ An error occurred!');
+      logger.error("Error in poke command:", error.message);
+      await message.reply("❌ An error occurred!");
     }
   },
 };

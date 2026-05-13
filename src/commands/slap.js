@@ -32,18 +32,14 @@ module.exports = {
 
       // UNIQUE SLAP GIFS ONLY
       const slapGifs = [
-        'https://media.giphy.com/media/3o85xIO33l7RlmLR4I/giphy.gif', // Anime slap
-        'https://media.giphy.com/media/xTiTnIHzP38T0Dz0I8/giphy.gif', // Funny slap anime
-        'https://media.giphy.com/media/l0HlR6R1w04l8MCZwM/giphy.gif', // Hard slap
-        'https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif', // Anime hit
-        'https://media.giphy.com/media/l0HlNaQ9hHmGtc4Za/giphy.gif', // Funny hit anime
-        'https://media.giphy.com/media/3o7TKU8RnDLjXHGwlG/giphy.gif', // Angry slap
-        'https://media.giphy.com/media/l3q2K5jinAlChoCLS/giphy.gif', // Fast slap
-        'https://media.giphy.com/media/l0HlTy9x8FZo0XO1i/giphy.gif', // Slap reaction
-        'https://media.giphy.com/media/l0HlQd7R8wpf7HTQc/giphy.gif', // Slap moment
-        'https://media.giphy.com/media/26uf1EUQrGnwHh3Eg/giphy.gif', // Action slap
-        'https://media.giphy.com/media/xT9IgEx8SbQ0teblJi/giphy.gif', // Explosive slap
-        'https://media.giphy.com/media/TL2Ylsmw0a8XK/giphy.gif', // Slap sound effect
+        'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExemNlcmU1YWxkdjNidmkyd2NqbXc3ZWtld3lxdWQxOXRlem9uYzhxZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/A9q5vQor9SWre/giphy.gif',
+        'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExemNlcmU1YWxkdjNidmkyd2NqbXc3ZWtld3lxdWQxOXRlem9uYzhxZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ewHSMEx2TtEo8/giphy.gif',
+        'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExemNlcmU1YWxkdjNidmkyd2NqbXc3ZWtld3lxdWQxOXRlem9uYzhxZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Qumf2QovTD4QxHPjy5/giphy.gif',
+        'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExemNlcmU1YWxkdjNidmkyd2NqbXc3ZWtld3lxdWQxOXRlem9uYzhxZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/schUjA2QKXd3NE59Yo/giphy.gif',
+        'https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3YmlydzU5ZnB1ODdieDdjcmdrb2d4NHNyOXRqMzZoNGszY2RubmRtbSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Gf3AUz3eBNbTW/giphy.gif',
+        'https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3c2NheDZubDJibWpoeDV5eDQxZTcyNnI4a200YmM3eXVtbjcxYnAyeCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/60rUVyj8ShyuEhHbaz/giphy.gif',
+        'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExemNlcmU1YWxkdjNidmkyd2NqbXc3ZWtld3lxdWQxOXRlem9uYzhxZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/uqSU9IEYEKAbS/giphy.gif',
+        'https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3YmlydzU5ZnB1ODdieDdjcmdrb2d4NHNyOXRqMzZoNGszY2RubmRtbSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3oriNXBCGHrzCYIbZK/giphy.gif',
       ];
 
       const randomMessage = slapMessages[Math.floor(Math.random() * slapMessages.length)];

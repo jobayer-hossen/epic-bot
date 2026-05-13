@@ -32,16 +32,12 @@ module.exports = {
 
       // Discord-embeddable Tenor GIFs (Anime Scare)
       const booGifs = [
-        'https://media.tenor.com/3wZ5q6Qq5vMAAAAC/anime-scared.gif',
-        'https://media.tenor.com/2l4-h42qnmcAAAAC/anime-scared.gif',
-        'https://media.tenor.com/0nR8Q5xFQ6sAAAAC/anime-jump-scare.gif',
-        'https://media.tenor.com/5Jp_e0uQG1MAAAAC/anime-shocked.gif',
-        'https://media.tenor.com/1a2b3c4d5e6f7g8h9i0jAAAAC/anime-scared.gif',
-        'https://media.tenor.com/8vQqQ4Z3ZxAAAAAC/anime-horror.gif',
-        'https://media.tenor.com/6Z6Z6Z6Z6Z6AAAAAC/anime-frightened.gif',
-        'https://media.tenor.com/7Q7Q7Q7Q7Q7AAAAAC/anime-shock.gif',
-        'https://media.tenor.com/9R9R9R9R9R9AAAAAC/anime-terror.gif',
-        'https://media.tenor.com/0A0A0A0A0A0AAAAAC/anime-scared.gif',
+        'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZG01OWs4anhtcDhodGU0a2Y0MGg3czBxd2wzemdjNjA1ODdiMndhNyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/zFq6QnA8g7iuI/giphy.gif',
+        'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZG01OWs4anhtcDhodGU0a2Y0MGg3czBxd2wzemdjNjA1ODdiMndhNyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/1QhmDy91F9veMRLpvK/giphy.gif',
+        'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZG01OWs4anhtcDhodGU0a2Y0MGg3czBxd2wzemdjNjA1ODdiMndhNyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Dh8op07q1r2DHB6bSk/giphy.gif',
+        'https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3eTloZDBvZnYydHV1dmF3ZGF5OHptZG9zZzN2OW1tN2N3aG5sY3d5MiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Sjwyqly7Ez1zJP2n0L/giphy.gif',
+        'https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3OGk3NDYyeW1rMTJrbGRzaDduaTA0dXhuOTRnbnpxYzYxd3F3dG5nMSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/5nSBeY3bTm1WyECZDu/giphy.gif',
+        
       ];
 
       const randomMessage = booMessages[Math.floor(Math.random() * booMessages.length)];

@@ -32,18 +32,10 @@ module.exports = {
 
       // UNIQUE HUG GIFS ONLY
       const hugGifs = [
-        'https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif', // Anime hug embrace
-        'https://media.giphy.com/media/3ohzdKdb7d6cpjw3DG/giphy.gif', // Cute hug animation
-        'https://media.giphy.com/media/l0HlNaQ9hHmGtc4Za/giphy.gif', // Happy hug anime
-        'https://media.giphy.com/media/26uf1EUQrGnwHh3Eg/giphy.gif', // Couple hug
-        'https://media.giphy.com/media/G3va3QG0bZB6CJr5tR/giphy.gif', // Sweet hug moment
-        'https://media.giphy.com/media/3o6ZsYq8d8feXNcJDi/giphy.gif', // Loving embrace
-        'https://media.giphy.com/media/fsEaEe2df680Oo7Acp/giphy.gif', // Warm hug anime
-        'https://media.giphy.com/media/l0HlR6R1w04l8MCZwM/giphy.gif', // Emotional hug
-        'https://media.giphy.com/media/l3q2K5jinAlChoCLS/giphy.gif', // Happy hug moment
-        'https://media.giphy.com/media/l0HlTy9x8FZo0XO1i/giphy.gif', // Joyful hug
-        'https://media.giphy.com/media/xTiTnIHzP38T0Dz0I8/giphy.gif', // Comforting hug
-        'https://media.giphy.com/media/l0HlQd7R8wpf7HTQc/giphy.gif', // Intimate hug
+        'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWM1bDc0N3lvdzZsYTlsbnU5NHYxZmh3YTB6NjgyYmI2dTZua3BvNCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/uakdGGShmMS0KYfTgp/giphy.gif',
+        'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWM1bDc0N3lvdzZsYTlsbnU5NHYxZmh3YTB6NjgyYmI2dTZua3BvNCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/llmZp6fCVb4ju/giphy.gif',
+        'https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3YzQwaWVuNWttbXVjM2U2a2kzbjVod3h0YWlzejMwM3AwZW5mODR5YyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/7DcWULPrivdaZr6wwF/giphy.gif',
+        'https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3MGxhenNyeHV1ZWlid2NzZmljNTNpbmE5eGprMnhvbG9hbzI3bG5jYSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/1UGLHdH4aXaCs/giphy.gif',
       ];
 
       const randomMessage = hugMessages[Math.floor(Math.random() * hugMessages.length)];

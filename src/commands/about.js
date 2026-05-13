@@ -12,36 +12,97 @@ module.exports = {
       const embed = new EmbedBuilder()
         .setColor('#FFD700')
         .setTitle('ℹ️ About Epic Bot')
-        .setDescription('Your ultimate companion bot!')
+        .setDescription('Your Ultimate EPIC RPG Companion! 🎮')
         .addFields(
           {
-            name: '🎮 Purpose',
+            name: '━━━━━ 🎯 MISSION ━━━━━',
             value:
-              'Epic Bot automatically detects and announces in-game events with instant notifications.',
+              'Epic Bot automatically detects and announces EPIC RPG in-game events with instant real-time notifications to keep your server always updated.',
             inline: false,
           },
           {
-            name: '🚀 Features',
+            name: '🚀 Core Features',
             value:
-              '• 🌧️ Coin Rain Detection\n• 🎁 Lootbox Summoning Detection\n• 📢 Instant Notifications\n• 🎯 Role Mentions',
+              '• 🌧️ Auto Coin Rain Detection\n• 🎁 Auto Lootbox Detection\n• 📢 Instant Notifications\n• 🎯 Smart Role Mentions\n• 🔔 Mention Sticker System\n• 🎭 6+ Action Commands',
             inline: false,
           },
           {
-            name: '👨‍💻 Developer',
+            name: '━━━━━ 📊 BOT STATISTICS ━━━━━',
+            value: ' ',
+            inline: false,
+          },
+          {
+            name: '🖥️ Technical Info',
+            value: `Version: **1.0.0**\nNode.js: ${process.version}\nLibrary: Discord.js v14\nPrefix: **eb** (case-insensitive)`,
+            inline: true,
+          },
+          {
+            name: '📈 Performance',
+            value: `Guilds: **${client.guilds.cache.size}**\nUsers: **${client.users.cache.size}**\nPing: **${client.ws.ping}ms**`,
+            inline: true,
+          },
+          {
+            name: '━━━━━ 👨‍💻 DEVELOPER ━━━━━',
+            value: ' ',
+            inline: false,
+          },
+          {
+            name: 'Creator',
             value: '<@782630678389981244>',
             inline: true,
           },
           {
-            name: '💬 Support',
-            value:
-              'For issues or suggestions, contact the server administrators.',
+            name: '📧 Contact',
+            value: 'Discord DM or Server Admin',
+            inline: true,
+          },
+          {
+            name: '━━━━━ ⚙️ SYSTEM STATUS ━━━━━',
+            value: ' ',
             inline: false,
           },
+          {
+            name: '✨ Active Features',
+            value:
+              '✅ Coin Rain Monitoring\n✅ Lootbox Monitoring\n✅ Action Commands\n✅ Mention System\n',
+            inline: true,
+          },
+          {
+            name: '🔐 Security',
+            value:
+              '✅ Token Secured\n✅ Rate Limited\n✅ Error Handling\n✅ Verified Bot',
+            inline: true,
+          },
+          {
+            name: '━━━━━ 🌟 WHY CHOOSE EPIC BOT ━━━━━',
+            value:
+              '⚡ Lightning Fast Responses\n🎯 Accurate Event Detection\n📱 Mobile Friendly\n🔄 Always Updating\n💪 Reliable & Stable\n🎨 Beautiful Embeds',
+            inline: false,
+          },
+          {
+            name: '📝 Latest Updates',
+            value:
+              '• Added mention sticker system\n• Enhanced action commands\n• Improved event detection\n• Better error handling\n',
+            inline: false,
+          },
+          {
+            name: '🎁 Premium Features',
+            value:
+              '• Custom role mentions\n• Real-time notifications\n• Multiple command support\n• Smart prefix system\n• 24/7 monitoring',
+            inline: false,
+          },
+          {
+            name: '💬 Support & Feedback',
+            value:
+              'Have suggestions? Found a bug? Contact the server administrators or reach out to the developer!',
+            inline: false,
+          }
         )
         .setThumbnail(client.user.avatarURL())
+        .setImage(client.user.avatarURL())
         .setTimestamp()
         .setFooter({
-          text: 'Epic Bot © 2024',
+          text: 'Epic Bot © 2026',
           iconURL: client.user.avatarURL(),
         });
 
