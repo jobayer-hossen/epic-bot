@@ -34,12 +34,10 @@ module.exports = {
 
       const bonkGifs = [
         "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZm5reDFidmZrZGg5ZGF6MWZpenAybXU5cW51bjc1MTlqNmUzNTI0aCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/schUjA2QKXd3NE59Yo/giphy.gif",
-        "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZm5reDFidmZrZGg5ZGF6MWZpenAybXU5cW51bjc1MTlqNmUzNTI0aCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/qgVnduXSn5Hy7DbW3r/giphy.gif",
-        "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZm5reDFidmZrZGg5ZGF6MWZpenAybXU5cW51bjc1MTlqNmUzNTI0aCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/GcTTNIyN9PZsBJxKRI/giphy.gif",
-        "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZm5reDFidmZrZGg5ZGF6MWZpenAybXU5cW51bjc1MTlqNmUzNTI0aCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/dCqz0HYyau1lPIjZi1/giphy.gif",
-        "https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3amFycHowdmpjbjYzazN4Y2g4cWZjbWduZ3FsbmQwbjFsc29wNnQyYiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/bkNa5EdzSUHvlttGEh/giphy.gif",
-        "https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3MDUydjJlbWtqbW1wM3J3eHk3aW9vOTBqZzFmYnZ6eWUycmQ1d3F3MyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/wxPamaDYtKo52qsTOF/giphy.gif",
-        "https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3MDUydjJlbWtqbW1wM3J3eHk3aW9vOTBqZzFmYnZ6eWUycmQ1d3F3MyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ihA4UppRKGiIQp69Si/giphy.gif",
+        "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGh6eHBjdWsxb2dsNXlieThlYXNsbjlsdmwwYm9oeDlpNGczaHcyZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dICjAqixKQFnG/giphy.gif",
+        "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzA4NjAxdXVyYjBkd2VnaWNiaGh1cHkzaHhvYmNja3U4OWF5b254ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/43bOrDOasXG6Y/giphy.gif",
+        "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnJpNTZkZjV2Y3hjOXphM3pyZTB5cXdzc2VoNDdybTljcWV3OTVyciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Gf3AUz3eBNbTW/giphy.gif",
+        
       ];
 
       const randomMessage =

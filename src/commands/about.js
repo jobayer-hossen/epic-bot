@@ -15,7 +15,7 @@ module.exports = {
         .setDescription('Your Ultimate EPIC RPG Companion! 🎮')
         .addFields(
           {
-            name: '━━━━━ 🎯 MISSION ━━━━━',
+            name: '🎯 MISSION',
             value:
               'Epic Bot automatically detects and announces EPIC RPG in-game events with instant real-time notifications to keep your server always updated.',
             inline: false,
@@ -27,7 +27,7 @@ module.exports = {
             inline: false,
           },
           {
-            name: '━━━━━ 📊 BOT STATISTICS ━━━━━',
+            name: '📊 BOT STATISTICS',
             value: ' ',
             inline: false,
           },
@@ -42,7 +42,7 @@ module.exports = {
             inline: true,
           },
           {
-            name: '━━━━━ 👨‍💻 DEVELOPER ━━━━━',
+            name: '👨‍💻 DEVELOPER',
             value: ' ',
             inline: false,
           },
@@ -57,7 +57,7 @@ module.exports = {
             inline: true,
           },
           {
-            name: '━━━━━ ⚙️ SYSTEM STATUS ━━━━━',
+            name: '⚙️ SYSTEM STATUS',
             value: ' ',
             inline: false,
           },
@@ -74,7 +74,7 @@ module.exports = {
             inline: true,
           },
           {
-            name: '━━━━━ 🌟 WHY CHOOSE EPIC BOT ━━━━━',
+            name: '🌟 WHY CHOOSE EPIC BOT',
             value:
               '⚡ Lightning Fast Responses\n🎯 Accurate Event Detection\n📱 Mobile Friendly\n🔄 Always Updating\n💪 Reliable & Stable\n🎨 Beautiful Embeds',
             inline: false,
@@ -83,12 +83,6 @@ module.exports = {
             name: '📝 Latest Updates',
             value:
               '• Added mention sticker system\n• Enhanced action commands\n• Improved event detection\n• Better error handling\n',
-            inline: false,
-          },
-          {
-            name: '🎁 Premium Features',
-            value:
-              '• Custom role mentions\n• Real-time notifications\n• Multiple command support\n• Smart prefix system\n• 24/7 monitoring',
             inline: false,
           },
           {

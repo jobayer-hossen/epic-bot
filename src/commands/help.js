@@ -17,14 +17,14 @@ module.exports = {
         .setThumbnail(client.user.avatarURL())
         .addFields(
           {
-            name: '━━━━━ 🎮 MAIN FEATURES ━━━━━',
+            name: '🎮 MAIN FEATURES',
             value: 'Core auto-detection features that monitor EPIC RPG events',
             inline: false,
           },
           {
             name: '🌧️ Coin Rain Detection',
             value:
-              '• Auto-detects coin rain events\n• Mentions @Catch role for 1B+ coins\n• Shows max reward amount\n• Real-time notifications',
+              '• Auto-detects coin rain events\n• Mentions @Catch role for 1Q+ coins\n• Shows max reward amount\n• Real-time notifications',
             inline: false,
           },
           {
@@ -34,7 +34,7 @@ module.exports = {
             inline: false,
           },
           {
-            name: '━━━━━ 🎯 UTILITY COMMANDS ━━━━━',
+            name: '🎯 UTILITY COMMANDS',
             value: 'Essential commands to manage and monitor the bot',
             inline: false,
           },
@@ -45,7 +45,7 @@ module.exports = {
             inline: false,
           },
           {
-            name: '━━━━━ 🎲 FUN & ACTION COMMANDS ━━━━━',
+            name: '🎲 FUN & ACTION COMMANDS',
             value: 'Interactive commands for server entertainment',
             inline: false,
           },
@@ -56,7 +56,7 @@ module.exports = {
             inline: false,
           },
           {
-            name: '━━━━━ 🔔 MENTION SYSTEM ━━━━━',
+            name: '🔔 MENTION SYSTEM',
             value: 'Automatic responses when you are mentioned',
             inline: false,
           },
