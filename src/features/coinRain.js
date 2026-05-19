@@ -86,6 +86,12 @@ class CoinRainFeature {
         return;
       }
 
+      // Only trigger if coins are mentionable (1Q+)
+      if (!this.isMentionworthy(maxReward)) {
+        logger.info(`⏭️  Coin Rain ignored: ${this.formatNumber(maxReward)} coins (below 1Q)`);
+        return;
+      }
+
       await this.triggerCoinRain(message, maxReward);
     } catch (error) {
       logger.error("Error handling coin rain:", error.message);
@@ -98,24 +104,30 @@ class CoinRainFeature {
   async triggerCoinRain(message, maxReward) {
     try {
       const formattedReward = this.formatNumber(maxReward);
-      const isMentionable = this.isMentionworthy(maxReward);
-
       const roleId = "1470272824500555980";
 
-      let coinRainMessage;
+      const coinRainMessage = `<@&${roleId}> You don't need **${formattedReward}** coins… right?`;
 
-      if (isMentionable) {
-        coinRainMessage = `<@&${roleId}> You don’t need **${formattedReward}** coins… right?`;
-      } else {
-        coinRainMessage = `You don’t need **${formattedReward}** coins… right?`;
-      }
-
-      await message.channel.send({
+      // Send the initial message with mention
+      const sentMessage = await message.channel.send({
         content: coinRainMessage,
         allowedMentions: { parse: ["roles"] },
       });
 
-      // logger.info(`✅ Coin Rain sent: ${formattedReward} coins`);
+      // Wait 40 seconds then edit the message to remove the mention
+      setTimeout(async () => {
+        try {
+          await sentMessage.edit({
+            content: `You don't need **${formattedReward}** coins… right?`,
+            allowedMentions: { parse: [] },
+          });
+          logger.info(`✅ Coin Rain mention removed after 40 seconds: ${formattedReward} coins`);
+        } catch (error) {
+          logger.error("Error removing coin rain mention:", error.message);
+        }
+      }, 40000); // 40 seconds in milliseconds
+
+      logger.info(`✅ Coin Rain sent: ${formattedReward} coins`);
     } catch (error) {
       logger.error("Error triggering coin rain:", error.message);
     }

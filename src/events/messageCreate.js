@@ -58,7 +58,9 @@ module.exports = {
 
         // Check if the owner is mentioned BUT NOT as a reply
         const isDirectMention =
-          message.mentions.has(ownerID) && message.reference === null; // No reply reference
+          message.mentions.has(ownerID) &&
+          message.reference === null &&
+          !message.author.bot; // No reply reference
 
         if (isDirectMention) {
           const stickers = [
@@ -67,12 +69,12 @@ module.exports = {
             "https://cdn.discordapp.com/emojis/1472947830669967392.webp?size=96",
             "https://cdn.discordapp.com/emojis/1466641318913507451.webp?size=48",
             "https://cdn.discordapp.com/emojis/1500347936691851274.webp?size=48",
-            'https://cdn.discordapp.com/emojis/1357479670584574093.webp?size=96',
+            "https://cdn.discordapp.com/emojis/1357479670584574093.webp?size=96",
             "https://cdn.discordapp.com/emojis/1472946773608759457.webp?size=96",
-            'https://cdn.discordapp.com/emojis/1473035254435680450.webp?size=96',
+            "https://cdn.discordapp.com/emojis/1473035254435680450.webp?size=96",
             "https://cdn.discordapp.com/emojis/1484112777558622210.webp?size=48",
             "https://cdn.discordapp.com/emojis/1472946717220540600.webp?size=96",
-            'https://cdn.discordapp.com/emojis/1469534191136936107.webp?size=96',
+            "https://cdn.discordapp.com/emojis/1469534191136936107.webp?size=96",
             "https://media.discordapp.net/stickers/1476422766755315855.webp?size=160&quality=lossless",
           ];
           const randomSticker =
