@@ -114,18 +114,15 @@ class CoinRainFeature {
         allowedMentions: { parse: ["roles"] },
       });
 
-      // Wait 40 seconds then edit the message to remove the mention
+      // Wait 30 seconds then DELETE the entire message
       setTimeout(async () => {
         try {
-          await sentMessage.edit({
-            content: `You don't need **${formattedReward}** coins… right?`,
-            allowedMentions: { parse: [] },
-          });
-          logger.info(`✅ Coin Rain mention removed after 40 seconds: ${formattedReward} coins`);
+          await sentMessage.delete();
+          logger.info(`✅ Coin Rain message deleted after 30 seconds: ${formattedReward} coins`);
         } catch (error) {
-          logger.error("Error removing coin rain mention:", error.message);
+          logger.error("Error deleting coin rain message:", error.message);
         }
-      }, 40000); // 40 seconds in milliseconds
+      }, 30000); // 30 seconds in milliseconds
 
       logger.info(`✅ Coin Rain sent: ${formattedReward} coins`);
     } catch (error) {

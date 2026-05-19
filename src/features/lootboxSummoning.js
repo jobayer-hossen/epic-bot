@@ -81,20 +81,17 @@ class LootboxSummoningFeature {
         allowedMentions: { parse: ["roles"] },
       });
 
-      // Wait 40 seconds then edit the message to remove the mention
+      // Wait 30 seconds then DELETE the entire message
       setTimeout(async () => {
         try {
-          await sentMessage.edit({
-            content: `If you want EDGY! then spam **SUMMON**!`,
-            allowedMentions: { parse: [] },
-          });
-          logger.info("✅ Role mention removed after 40 seconds");
+          await sentMessage.delete();
+          logger.info("✅ Lootbox summoning message deleted after 30 seconds");
         } catch (error) {
-          logger.error("Error removing mention:", error.message);
+          logger.error("Error deleting lootbox summoning message:", error.message);
         }
-      }, 40000); // 40 seconds in milliseconds
+      }, 30000); // 30 seconds in milliseconds
 
-      // logger.info('✅ Lootbox summoning sent');
+      logger.info("✅ Lootbox summoning sent");
     } catch (error) {
       logger.error("Error triggering summoning:", error.message);
     }
