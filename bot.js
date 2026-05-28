@@ -169,7 +169,6 @@ bot.initialize();
 // Graceful shutdown
 process.on("SIGINT", async () => {
   logger.info("⏹️  Shutting down gracefully...");
-
   process.exit(0);
 });
 
